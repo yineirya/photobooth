@@ -1,0 +1,6 @@
+{
+  "name": "Friendsgiving Photobooth",
+  "description": "An offline-first photobooth app optimized for iPad Safari with custom templates, auto slot detection, and instant sharing.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
