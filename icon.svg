@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D95D24" />
+      <stop offset="50%" stop-color="#C24E1A" />
+      <stop offset="100%" stop-color="#8E2A18" />
+    </linearGradient>
+    <linearGradient id="lens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5EC" />
+      <stop offset="100%" stop-color="#FED7B2" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3D1D10" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  
+  <!-- Decorative Autumn Leaf Accent -->
+  <path d="M380 90 C 430 110, 440 170, 390 200 C 350 220, 350 160, 340 140 C 330 120, 350 100, 380 90 Z" fill="#F49D37" opacity="0.85" />
+  <path d="M380 90 Q 365 145 390 200" stroke="#8E2A18" stroke-width="4" fill="none" opacity="0.6"/>
+
+  <!-- Camera Body -->
+  <g filter="url(#shadow)">
+    <!-- Flash/Top notch -->
+    <rect x="180" y="140" width="70" height="30" rx="8" fill="#FFF2E2" />
+    <circle cx="340" cy="155" r="14" fill="#F49D37" />
+    
+    <!-- Main Camera -->
+    <rect x="100" y="165" width="312" height="230" rx="36" fill="#FFF9F2" />
+    <rect x="100" y="165" width="312" height="75" rx="36" fill="#F3D5B5" />
+    <rect x="100" y="210" width="312" height="30" fill="#F3D5B5" />
+    
+    <!-- Lens outer ring -->
+    <circle cx="256" cy="290" r="76" fill="#8E2A18" />
+    <circle cx="256" cy="290" r="64" fill="url(#lens)" stroke="#D95D24" stroke-width="8" />
+    <circle cx="256" cy="290" r="38" fill="#4A1E11" />
+    <circle cx="240" cy="274" r="12" fill="#FFFFFF" opacity="0.8" />
+    
+    <!-- Viewfinder indicator -->
+    <rect x="135" y="195" width="36" height="24" rx="6" fill="#4A1E11" />
+    <circle cx="153" cy="207" r="4" fill="#38A169" />
+  </g>
+  
+  <!-- Little Pumpkin accent at bottom right -->
+  <g transform="translate(370, 370)">
+    <ellipse cx="20" cy="25" rx="28" ry="22" fill="#E66723" />
+    <ellipse cx="10" cy="25" rx="18" ry="22" fill="#F27F2E" />
+    <ellipse cx="30" cy="25" rx="18" ry="22" fill="#F27F2E" />
+    <ellipse cx="20" cy="25" rx="10" ry="21" fill="#FCA252" />
+    <path d="M18 6 Q 22 -4 30 -2" stroke="#2F6A30" stroke-width="5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
